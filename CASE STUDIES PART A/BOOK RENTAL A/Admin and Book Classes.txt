@@ -77,9 +77,52 @@ class Book {
 	}
 }
 
+class Admin {
+	int adminId;
+	String emailId;
+	String firstName;
+	String password;
+	public Admin() {
+		super();
+	}
+	public Admin(int adminId, String emailId, String firstName, String password) {
+		this.adminId = adminId;
+		this.emailId = emailId;
+		this.firstName = firstName;
+		this.password = password;
+	}
+	public int getAdminId() {
+		return adminId;
+	}
+	public void setAdminId(int adminId) {
+		this.adminId = adminId;
+	}
+	public String getEmailId() {
+		return emailId;
+	}
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	@Override
+	public String toString() {
+		return "Admin [adminId=" + adminId + ", emailId=" + emailId + ", firstName=" + firstName + ", password="
+				+ password + "]";
+	}
+}
+
 public class Source {
 	public static void main(String[] args) {
-		Book book = new Book(101,"Wings of Fire","Apj Abdul Kalam Book","APJ",300.0,30,20,10.0);
-		System.out.println(book);
 	}
 }
